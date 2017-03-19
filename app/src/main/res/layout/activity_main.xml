@@ -1,0 +1,127 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <EditText
+            android:id="@+id/name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Your name"
+            android:inputType="textCapWords" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/CustomText"
+            android:text="@string/toppings" />
+
+        <CheckBox
+            android:id="@+id/whippedCream_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="@string/whipped_cream"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/chocolate_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="@string/chocolate"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/CustomText"
+            android:text="Quantity" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="8dp"
+                android:backgroundTint="#146DE4"
+                android:onClick="decrement"
+                android:text="-"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/quantity_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:backgroundTint="#146DE4"
+                android:onClick="increment"
+                android:text="+"
+                android:textColor="@android:color/white" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/CustomText"
+            android:text="ORDER SUMMARY" />
+
+        <TextView
+            android:id="@+id/order_summary_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="$0"
+            android:textColor="@android:color/black" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/order_button"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:backgroundTint="#146DE4"
+                android:onClick="submitOrder"
+                android:text="Order"
+                android:textColor="@android:color/white">
+                android:layout_gravity="center"</Button>
+
+            <Button
+                android:id="@+id/emailOrder_button"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:backgroundTint="#146DE4"
+                android:onClick="emailOrder"
+                android:text="Email Order"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

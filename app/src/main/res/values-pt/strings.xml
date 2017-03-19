@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Just Java</string>
+    <string name="chocolate">Chocolate</string>
+    <string name="toppings">Coberturas</string>
+    <string name="whipped_cream">Natas</string>
+</resources>
